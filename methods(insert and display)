@@ -1,0 +1,28 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+public class Rectangle {
+     private int length;
+     private int width;
+     private int area;
+    
+     public Rectangle (int lenght, int width) {
+         this.lenght=lenght;
+         this.width=width;
+         this.area=lenght*width;
+     }
+     public void insertmembers(int lenght, int width) {
+         this.lenght= lenght;
+         this.width= width;
+           this.area=lenght*width;
+     }
+     public void displaymembers() {
+         System.out.println("The lenght is " + length);
+         System.out.println("The width is " + width);
+           System.out.println("The area is " + area);
+     }
+     public static void main(string[] args) {
+         Rectangle R1= new Rectangle(4,5);
+         R1.displaymembers();
+     }
+}
